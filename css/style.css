@@ -2,6 +2,10 @@ body {
     margin: 0 auto;
 }
 
+.container {
+    max-width: 100%;
+}
+
 .navbar {
     background: rgb(249,0,228);
     background: linear-gradient(90deg, rgba(249,0,228,1) 0%, rgba(180,70,185,1) 14%, rgba(172,65,185,1) 18%, rgba(137,46,215,1) 25%, rgba(126,75,212,1) 35%, rgba(30,93,142,1) 48%, rgba(28,102,138,1) 76%, rgba(98,195,148,1) 90%, rgba(0,255,79,0.47805059523809523) 100%);
@@ -29,10 +33,43 @@ body {
 }
 
 .navbar input {
-    background: white no-repeat 95% 50% / 30px 30px url(../images/search-icon.svg);
-    padding: 15px 15px;
+    padding: 15px 20px 15px 20px;
     border-radius: 25px;
     flex-basis: 20%;
     border: none;
     font-size: 25px;
+    display: flex;
+    position: relative;
+}
+
+.search-input {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    cursor: pointer;
+}
+
+.products-lists {
+    padding: 20px 50px;
+}
+
+.products-lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.product-item {
+    flex: 1 1 calc(31.333% - 20px);
+    box-sizing: border-box;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
 }
